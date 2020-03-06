@@ -1,0 +1,97 @@
+body {
+    background: #ffffff;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
+    border: none;
+    color: #000000;
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea,
+select {
+    outline: none;
+    font-family: Arial;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: underline;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-size: 20px;
+    padding: 0 0 10px 0;
+    color: #545454;
+}
+
+.mainer {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;  /* - чтобы побокам при сужении сужался и текст */
+    box-sizing: border-box; /* - чтобы сайт остался 1140пх, а не 1170пх после паддинга */
+    text-align: center;
+}
+
+.block-features {
+    background-color: #121116;
+}
+
+.block-features .wrapper { /* - родительский элемент и ребёнок. теперь можно еще в дргуих местах использовать wrapper */
+    display: flex;
+    margin: 0 -15px;  /* - чтобы блок шел четко по границам,без этого значения он вылазит за края */
+    background-color: #2a252b;
+}
+
+.block-features .logo {
+    padding: -30px;
+}
+
+.block-features .caption {
+    color: white;
+    font-size: 20px;
+    padding: 40px 0 0 0;
+}
+
+.block-features .cell {
+    flex-grow: 1;  /*- чтобы ячейки занимали все пространство */
+    padding: 100px 15px 38px 15px;  /* высота между картинкой и началом макета, и так же внизу, ставим одно значение потмоу что и сверху и снизу одинаковое расстояние */
+}
+
+.block-features .img {
+    text-align: center;
+    padding: 20px 15px 0 15px;
+}
+
+
+a:link {
+    color: #1dc0f0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.block-features .footer {
+    color: white;
+    font-size: 14px;
+    padding: 80px 0 0 0;
+}
